@@ -25,8 +25,8 @@ use App\Http\Controllers\DocumentController;
 // });
 Route::get('gpay', [Controller::class, 'gpay']);
 Route::get('/', [Controller::class, 'gpay']);
-Route::get('stripe', [PaymentController::class, 'stripe']);
-Route::get('/get-intent', [PaymentController::class, 'createPaymentIntent']);
+Route::get('/stripe', [PaymentController::class, 'stripe']);
+Route::post('/get-intent', [PaymentController::class, 'createPaymentIntent']);
 
 
 Route::match(['GET', 'POST'], 'employee/upload/document', [DocumentController::class, 'documentUpload'])->name('employee.upload.document');

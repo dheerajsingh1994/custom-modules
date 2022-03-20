@@ -10,17 +10,17 @@
     <div id="container">
 
     </div>
-    <script src="{{asset('js/custom/gpay.js')}}"></script>
-    <script async
+    {{-- <script src="{{asset('js/custom/gpay.js')}}"></script> --}}
+    {{-- <script async
     src="https://pay.google.com/gp/p/js/pay.js"
-    onload="onGooglePayLoaded()"></script>
-    <script>
+    onload="onGooglePayLoaded()"></script> --}}
+    {{-- <script>
         (async () => {
             const response = await fetch('/get-intent');
             console.log(response);
             // const {client_secret: clientSecret} = await response.json();
             // Render the Payment Element using the clientSecret
         })();
-    </script>
+    </script> --}}
 </body>
 </html>
